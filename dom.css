@@ -1,0 +1,76 @@
+:root {
+  /* variables css */
+  --yellow-color: #f7df1e;
+  --dark-color: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  text-align: center;
+  background-color: yellow;
+  color: black;
+  padding: 20px 0px 10px 0px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.cards {
+  border: thin solid var(--dark-color);
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  display: inline-block;
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+
+.card figcaption {
+  padding: 1rem;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.rotate-135 {
+  transform: rotate(135deg);
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.sepia {
+  filter: sepia(1);
+}
+
+input {
+  height: 30px;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 2rem;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+}
